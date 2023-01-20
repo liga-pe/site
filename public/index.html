@@ -4,18 +4,134 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portal da Liga Pernambucana de Direito Digital.">
-    <meta name="theme-color" content="#000000">
-    <meta name="author" content="Danilo César">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="author" content="Liga Pernambucana de Direito Digital">
     <title>Liga Pernambucana de Direito Digital</title>
 
     <link href="favicon.ico" rel="icon">
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
 
-    <p>Liga Pernambucana de Direito Digital</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans font-[Roboto]" x-data="app()">
+
+    <header class="flex bg-white shadow">
+        <img src="/public/assets/logo.png" alt="Liga Pernambucana de Direito Digital" title="Liga Pernambucana de Direito Digital" />
+
+        <nav>
+            <a href="#">Página principal</a>
+            <a href="#">Quem somos</a>
+            <a href="#">Professores</a>
+            <a href="#">Cronograma</a>
+            <a href="#">Consenso</a>
+
+            <a href="#">Política de privacidade</a>
+            <a href="#">Lista de grupos</a>
+        </nav>
+    </header>
+
+    <section class="flex flex-col items-center justify-center px-20 text-white banner">
+        <h2 class="text-[40px] mb-16 z-10">Inscrições Abertas!</h2>
+        <div class="z-10 flex justify-between w-full">
+            <a href="#" class="text-3xl underline" target="_blank">Formulário para Curso de Direito</a>
+            <a href="#" class="text-3xl underline" target="_blank">Formulário para Demais Cursos</a>
+        </div>
+        <div class="flex justify-end w-full">
+            <div class="z-10 mt-28">
+                <h3 class="text-3xl">Seja bem-vindo ao Portal da Liga <br /> Pernambucana de Direito Digital</h3>
+                <p class="text-base">Aqui, você encontra tudo acerca de nossas atividades.</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container flex flex-col w-full px-6 py-12 mx-auto md:py-20 2xl:px-0">
+        <section class="quem-somos">
+            <h2 class="flex">
+                <span class="text-4xl text-blue-500 mr-9 -tracking-wider">Quem Somos</span>
+                <div class="barra flex-grow border-b-blue-500 border-b-[3px] h-8"></div>
+            </h2>
+            <div class="py-12 font-serif text-lg prose text-justify text-gray-700">
+                <p class="indent-7">A Liga Pernambucana de Direito Digital é um grupo que reúne professores, estudantes, profissionais de todas as áreas do conhecimento para a realização de atividades de estudo, pesquisa e extensão na área de tecnologia e o seu relacionamento direto com direitos coletivos e individuais, bem como seu impacto na sociedade. Através da realização de atividades de estudo, pesquisa e extensão como palestras, workshops, hackatons, mutirões, seminários, eventos, etc.</p>
+                <p class="mt-6 indent-7">Através de atividades de pesquisa coordenada pelos nossos professores e com a ajuda de nossos colaboradores, a Liga proporciona um ambiente disruptivo, divertido e saudável para desenvolvimento, empreendimento e publicação de artigos científicos. Nossa metodologia de oportunizar que os alunos atuem nas atividades de ensino bem como colocando-os à frente das atividades de extensão acaba proporcionando capacitação e aprendizado aos seus participantes.</p>
+            </div>
+        </section>
+
+        <section class="mt-16 equipe">
+            <h2 class="flex">
+                <span class="text-4xl text-blue-500 mr-9 -tracking-wider">Professores e Colaboradores</span>
+                <div class="barra flex-grow border-b-blue-500 border-b-[3px] h-8"></div>
+            </h2>
+            <div class="grid grid-cols-1 mt-12 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
+                <template x-for="(colaborador, index) in colaboradores" :key="index">
+                    <div class="flex flex-col items-center justify-center text-center group">
+                        <img :src="colaborador.avatar" class="w-40 h-40 mb-8 transition-shadow duration-200 rounded-full group-hover:shadow-lg" />
+                        <p class="text-4xl text-blue-600 mb-7" x-text="colaborador.nome"></p>
+                        <div class="mb-6 text-blue-600 redes">
+                            <a :href="colaborador.redes.facebook" x-show="colaborador.redes.facebook">Facebook</a>
+                            <a :href="colaborador.redes.instagram" x-show="colaborador.redes.instagram">instagram</a>
+                            <a :href="colaborador.redes.linkedin" x-show="colaborador.redes.linkedin">linkedin</a>
+                        </div>
+                        <p class="font-serif text-base text-center text-gray-900" x-text="colaborador.biografia"></p>
+                    </div>
+                </template>
+            </div>
+        </section>
+
+        <section class="mt-16 cronograma">
+            <h2 class="flex">
+                <span class="text-4xl text-blue-500 mr-9 -tracking-wider">Cronograma de Atividades</span>
+                <div class="barra flex-grow border-b-blue-500 border-b-[3px] h-8"></div>
+            </h2>
+            <h3 class="mt-6 text-3xl text-blue-500 mb-14">Primeiro Semestre de 2023</h3>
+            <div class="grid grid-cols-1 mt-12 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
+                <template x-for="(evento, index) in cronograma" :key="index">
+                    <div class="flex flex-col items-center justify-center py-8 text-center bg-white border-2 border-blue-700 shadow-lg group">
+                        <p class="mb-4 font-serif text-gray-500" x-text="evento.titulo"></p>
+                        <p class="text-xl font-bold text-gray-400" x-text="evento.data"></p>
+                    </div>
+                </template>
+            </div>
+        </section>
+    </main>
+
+    <footer class="grid grid-cols-4 px-32 py-8 text-white bg-blue-500">
+        <div class="flex flex-col col-span-1 gap-y-2">
+            <h3 class="mb-6 text-base font-bold">Sobre</h3>
+            <a href="#" class="text-sm hover:underline">Quem Somos</a>
+            <a href="#" class="text-sm hover:underline">Professores e Colaboradores</a>
+            <a href="#" class="text-sm hover:underline">Cronograma de Atividades</a>
+        </div>
+        <div class="flex flex-col col-span-1 gap-y-2">
+            <h3 class="mb-6 text-base font-bold">Grupos Membros</h3>
+            <template x-for="(grupo, index) in grupos" :key="index">
+                <a href="#" class="text-sm hover:underline" x-text="grupo.titulo"></a>
+            </template>
+        </div>
+        <div class="flex flex-col col-span-1 gap-y-2">
+            <h3 class="mb-6 text-base font-bold">Dúvidas</h3>
+            <a href="#" class="text-sm hover:underline">Como se tornar membro</a>
+        </div>
+        <div class="flex flex-col col-span-1 gap-y-2">
+            <h3 class="mb-6 text-base font-bold">Redes Sociais e Contato</h3>
+            <a href="mailto:ligapedd@gmail.com" class="text-sm hover:underline">ligapedd@gmail.com</a>
+            <div class="redes-sociais">
+                %redes%
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center col-span-4 mt-16 text-sm text-center">
+            <p>&copy; 2022 - Liga Pernambucana de Direito Digital.</p>
+            <p>
+                Arte por <a href="#" class="underline" target="_blank">Kako Holder</a>.
+                Design de Kennedy, adaptado por <a href="https://danilo.discente.com/" class="underline" target="_blank">Danilo César</a>.
+            </p>
+        </div>
+    </footer>
 
     <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="/src/js/scripts.js"></script>
 
 </body>
 </html>
