@@ -2,6 +2,7 @@ const app = () => {
     return {
         isInscricoesAbertas: true,
 
+        atualSecao: "",
         isOpenMenuMobile: false,
         isOpenMenuMais: false,
 
@@ -78,6 +79,21 @@ const app = () => {
             }
         ],
 
-        init() {}
+        scrollSpy() {
+            const ancoras = document.querySelectorAll('.ancora');
+
+            window.onscroll = () => {
+                let headerHeight = document.querySelector('header').offsetHeight;
+                const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+                for (let s in ancoras)
+                    if (ancoras.hasOwnProperty(s) && ancoras[s].offsetTop <= (scrollPos + headerHeight)) {
+                        this.atualSecao = ancoras[s].id || "";
+                    }
+            }
+        },
+
+        init() {
+            this.scrollSpy();
+        }
     }
 }
