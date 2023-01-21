@@ -48,7 +48,7 @@ const app = () => {
                     "instagram": "https://www.instagram.com/amaliacamara/",
                     "linkedin": "https://www.linkedin.com/in/am%C3%A1lia-camara-4a100a140/?originalSubdomain=nl"
                 },
-                "avatar": "/public/assets/avatars/membro-1.webp"
+                "avatar": "/assets/avatars/membro-1.webp"
             },
             {
                 "nome": "Paloma Saldanha",
@@ -57,7 +57,7 @@ const app = () => {
                     "instagram": "https://www.instagram.com/palomasaldanha__/",
                     "linkedin": "https://www.linkedin.com/in/paloma-mendes-saldanha-b52b73205/"
                 },
-                "avatar": "/public/assets/avatars/membro-2.webp"
+                "avatar": "/assets/avatars/membro-2.webp"
             },
             {
                 "nome": "Alexandre Pimentel",
@@ -65,7 +65,7 @@ const app = () => {
                 "redes": {
                     "instagram": "https://www.instagram.com/alexandre.freirepimentel/"
                 },
-                "avatar": "/public/assets/avatars/membro-3.webp"
+                "avatar": "/assets/avatars/membro-3.webp"
             },
             {
                 "nome": "Anna Priscylla",
@@ -75,7 +75,7 @@ const app = () => {
                     "instagram": "https://www.instagram.com/profa.annapriscylla/?hl=pt-br",
                     "linkedin": "https://br.linkedin.com/in/anna-priscylla-lima-prado-2039a5168/"
                 },
-                "avatar": "/public/assets/avatars/membro-4.webp"
+                "avatar": "/assets/avatars/membro-4.webp"
             },
             {
                 "nome": "Walter Rodrigues",
@@ -85,7 +85,7 @@ const app = () => {
                     "instagram": "https://www.instagram.com/walter.adv/",
                     "linkedin": "https://www.linkedin.com/in/walter-de-macedo-rodrigues-bb39241b4/"
                 },
-                "avatar": "/public/assets/avatars/membro-5.webp"
+                "avatar": "/assets/avatars/membro-5.webp"
             },
             {
                 "nome": "Renata Oliveira",
@@ -95,7 +95,7 @@ const app = () => {
                     "instagram": "https://www.instagram.com/renataoliveira.adv/?hl=pt-br",
                     "linkedin": "https://www.linkedin.com/in/renataoliveiraadv/"
                 },
-                "avatar": "/public/assets/avatars/membro-6.webp"
+                "avatar": "/assets/avatars/membro-6.webp"
             },
             {
                 "nome": "Gabriel Lins",
@@ -105,7 +105,7 @@ const app = () => {
                     "instagram": "https://www.instagram.com/gabrielh.lins/?hl=pt-br",
                     "linkedin": "https://www.linkedin.com/in/gabriel-lins-1b0913141/?originalSubdomain=br"
                 },
-                "avatar": "/public/assets/avatars/membro-7.webp"
+                "avatar": "/assets/avatars/membro-7.webp"
             },
             {
                 "nome": "Rosalina Freitas",
@@ -115,7 +115,7 @@ const app = () => {
                     "instagram": "https://www.instagram.com/rosalina.freitas/",
                     "linkedin": "https://www.linkedin.com/in/rosalina-freitas-95b49b207/?trk=public_profile_browsemap&originalSubdomain=br"
                 },
-                "avatar": "/public/assets/avatars/membro-8.webp"
+                "avatar": "/assets/avatars/membro-8.webp"
             },
         ],
 
