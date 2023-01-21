@@ -39,9 +39,6 @@
                     <a href="#cronograma" class="p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500" title="Ir para a seção">Cronograma</a>
                 </div>
                 <div class="mt-6 lg:mt-0">
-                    <a href="#" class="p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500" title="Ir para a página">Consenso</a>
-                </div>
-                <div class="mt-6 lg:mt-0">
                     <button type="button" class="inline-flex items-center p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500 group md:rounded-r-full" aria-expanded="false" @click="isOpenMenuMais = !isOpenMenuMais" @click.away="isOpenMenuMais = false">
                         Mais
                         <svg :class="(isOpenMenuMais) ? 'rotate-180 duration-300 text-blue-500' : 'duration-300'" class="w-5 h-5 ml-3 text-blue-500 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -52,7 +49,7 @@
                     <div class="absolute z-40 transform" x-show="isOpenMenuMais" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" x-cloak>
                         <div class="flex flex-col overflow-hidden bg-white rounded-lg shadow">
                             <a href="#" class="w-full p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500" title="Ir para a página">Política de privacidade</a>
-                            <a href="#" class="w-full p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500" title="Ir para a página">Lista de grupos</a>
+                            <a href="breve.html" class="w-full p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500" title="Ir para a página">Lista de grupos</a>
                         </div>
                     </div>
                 </div>
@@ -170,23 +167,23 @@
         <div class="container grid grid-cols-4 px-8 mx-auto 2xl:px-0">
             <div class="flex flex-col col-span-4 lg:col-span-1 gap-y-2">
                 <h3 class="mt-6 text-base font-bold lg:mt-0 lg:mb-6">Sobre</h3>
-                <a href="#" class="text-sm hover:underline">Quem Somos</a>
-                <a href="#" class="text-sm hover:underline">Professores e Colaboradores</a>
-                <a href="#" class="text-sm hover:underline">Cronograma de Atividades</a>
+                <a href="#quem-somos" class="text-sm hover:underline" title="Ir para a seção">Quem Somos</a>
+                <a href="#professores" class="text-sm hover:underline" title="Ir para a seção">Professores e Colaboradores</a>
+                <a href="#cronograma" class="text-sm hover:underline" title="Ir para a seção">Cronograma de Atividades</a>
             </div>
             <div class="flex flex-col col-span-4 lg:col-span-1 gap-y-2">
                 <h3 class="mt-6 text-base font-bold lg:mt-0 lg:mb-6">Grupos Membros</h3>
                 <template x-for="(grupo, index) in grupos" :key="index">
-                    <a href="#" class="text-sm hover:underline" x-text="grupo.titulo"></a>
+                    <a href="#" class="text-sm hover:underline" title="Ir para a página" x-text="grupo.titulo"></a>
                 </template>
             </div>
             <div class="flex flex-col col-span-4 lg:col-span-1 gap-y-2">
                 <h3 class="mt-6 text-base font-bold lg:mt-0 lg:mb-6">Dúvidas</h3>
-                <a href="#" class="text-sm hover:underline">Como se tornar membro</a>
+                <a href="breve.html" class="text-sm hover:underline" title="Ir para a página">Como se tornar membro</a>
             </div>
             <div class="flex flex-col col-span-4 lg:col-span-1 gap-y-2">
                 <h3 class="mt-6 text-base font-bold lg:mt-0 lg:mb-6">Redes Sociais e Contato</h3>
-                <a href="mailto:ligapedd@gmail.com" class="text-sm hover:underline">ligapedd@gmail.com</a>
+                <a href="mailto:ligapedd@gmail.com" class="text-sm hover:underline" title="Enviar e-mail">ligapedd@gmail.com</a>
                 <div class="flex items-center mt-4 gap-x-5 redes">
                     <a href="#" title="Ir para o Facebook" target="_blank">
                         <svg class="w-8 h-8 text-white" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
