@@ -1,5 +1,8 @@
 const app = () => {
     return {
+        isOpenMenuMobile: false,
+        isOpenMenuMais: false,
+
         grupos: [
             {
                 "titulo": "Democracia Líquida",
