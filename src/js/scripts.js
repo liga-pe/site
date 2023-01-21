@@ -1,5 +1,7 @@
 const app = () => {
     return {
+        isInscricoesAbertas: true,
+
         isOpenMenuMobile: false,
         isOpenMenuMais: false,
 
