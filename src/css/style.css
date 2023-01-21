@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none !important;
+}
+
 .banner {
     background-image: url('/public/assets/banner.webp');
     background-position: bottom right;
