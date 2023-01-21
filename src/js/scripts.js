@@ -8,26 +8,32 @@ const app = () => {
         grupos: [
             {
                 "titulo": "Democracia Líquida",
+                "link": "breve.html",
                 "slug": "democracia-liquida"
             },
             {
                 "titulo": "Smart Cities",
+                "link": "breve.html",
                 "slug": "smart-cities"
             },
             {
                 "titulo": "Transparência algorítmica",
+                "link": "https://www.instagram.com/transparencia.dd/",
                 "slug": "transparencia-algoritmica"
             },
             {
                 "titulo": "Propriedade Intelectual",
+                "link": "https://www.instagram.com/propriedadeintelectual.dd/",
                 "slug": "propriedade-intelectual"
             },
             {
                 "titulo": "Tributec",
+                "link": "https://www.instagram.com/tributec.dd/",
                 "slug": "tributec"
             },
             {
                 "titulo": "Proteção de Dados e Privacidade",
+                "link": "breve.html",
                 "slug": "protecao-de-dados-e-privacidade"
             }
         ],
