@@ -117,7 +117,7 @@
             <div class="grid grid-cols-1 mt-12 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
                 <template x-for="(colaborador, index) in colaboradores" :key="index">
                     <div class="flex flex-col items-center justify-center text-center group">
-                        <img :src="colaborador.avatar" class="w-40 h-40 mb-8 transition-shadow duration-200 rounded-full group-hover:shadow-lg" />
+                        <img :src="colaborador.avatar" :alt="colaborador.nome" class="w-40 h-40 mb-8 transition-shadow duration-200 rounded-full group-hover:shadow-lg" />
                         <p class="text-4xl text-[#3697ea] mb-7" x-text="colaborador.nome"></p>
                         <div class="flex mb-6 text-[#3697ea] gap-x-4 redes">
                             <a :href="colaborador.redes.instagram" title="Ir para o Instagram (em nova aba)" target="_blank" rel="nofollow" x-show="colaborador.redes.instagram">
