@@ -21,22 +21,22 @@
 
     <header class="sticky top-0 z-50 text-blue-500 transition duration-300 ease-out bg-white border-b shadow-lg lg:duration-200">
         <div class="container flex flex-row flex-wrap items-center justify-between px-6 py-6 mx-auto 2xl:px-0">
-            <a href="index.html" class="flex items-center font-medium text-gray-900 title-font md:mb-0" title="Liga Pernambucana de Direito Digital">
+            <a href="/" class="flex items-center font-medium text-gray-900 title-font md:mb-0" title="Liga Pernambucana de Direito Digital">
                 <img src="/public/assets/logo.webp" class="h-8 md:h-12" alt="Liga Pernambucana de Direito Digital" />
             </a>
 
             <nav class="flex-wrap items-center justify-center order-last w-full text-base text-center lg:order-none lg:w-auto lg:text-left lg:gap-x-2 lg:flex lg:-ml-16" :class="(!isOpenMenuMobile) ? 'hidden' : ''" x-cloak>
                 <div class="mt-6 lg:mt-0">
-                    <a href="index.html" class="p-4 text-white transition-colors duration-200 bg-blue-500 md:rounded-l-full" title="Ir para a página">Página principal</a>
+                    <a href="/" class="p-4 text-white transition-colors duration-200 bg-blue-500 md:rounded-l-full" title="Ir para a página">Página principal</a>
                 </div>
                 <div class="mt-6 lg:mt-0">
-                    <a href="#" class="p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500" title="Ir para a página">Quem somos</a>
+                    <a href="#quem-somos" class="p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500" title="Ir para a seção">Quem somos</a>
                 </div>
                 <div class="mt-6 lg:mt-0">
-                    <a href="#" class="p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500" title="Ir para a página">Professores</a>
+                    <a href="#professores" class="p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500" title="Ir para a seção">Professores</a>
                 </div>
                 <div class="mt-6 lg:mt-0">
-                    <a href="#" class="p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500" title="Ir para a página">Cronograma</a>
+                    <a href="#cronograma" class="p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500" title="Ir para a seção">Cronograma</a>
                 </div>
                 <div class="mt-6 lg:mt-0">
                     <a href="#" class="p-4 transition-colors duration-200 hover:text-white hover:bg-blue-500" title="Ir para a página">Consenso</a>
@@ -92,6 +92,7 @@
 
     <main class="container flex flex-col w-full px-6 py-12 mx-auto md:py-20 2xl:px-0">
         <section class="quem-somos">
+            <a id="quem-somos"></a>
             <h2 class="flex">
                 <span class="text-4xl text-blue-500 mr-9 -tracking-wider">Quem Somos</span>
                 <div class="barra flex-grow border-b-blue-500 border-b-[3px] h-8"></div>
@@ -103,6 +104,7 @@
         </section>
 
         <section class="mt-16 equipe">
+            <a id="professores"></a>
             <h2 class="flex">
                 <span class="text-4xl text-blue-500 mr-9 -tracking-wider">Professores e Colaboradores</span>
                 <div class="barra flex-grow border-b-blue-500 border-b-[3px] h-8"></div>
@@ -145,6 +147,7 @@
         </section>
 
         <section class="mt-16 cronograma">
+            <a id="cronograma"></a>
             <h2 class="flex">
                 <span class="text-4xl text-blue-500 mr-9 -tracking-wider">Cronograma de Atividades</span>
                 <div class="barra flex-grow border-b-blue-500 border-b-[3px] h-8"></div>
