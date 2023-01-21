@@ -25,7 +25,7 @@
 </head>
 <body class="font-sans font-[Roboto]" x-data="app()" @resize.window="isOpenMenuMobile=false,isOpenMenuMais=false">
 
-    <header class="sticky top-0 z-50 text-blue-500 transition duration-300 ease-out bg-white border-b shadow-lg lg:duration-200">
+    <header class="sticky top-0 z-50 text-[#3697ea] transition duration-300 ease-out bg-white border-b shadow-lg lg:duration-200">
         <div class="container flex flex-row flex-wrap items-center justify-between px-6 py-6 mx-auto 2xl:px-0">
             <a href="/" class="flex items-center font-medium text-gray-900 title-font md:mb-0" title="Liga Pernambucana de Direito Digital">
                 <img src="/public/assets/logo.webp" class="h-8 md:h-12" alt="Liga Pernambucana de Direito Digital" />
@@ -33,21 +33,21 @@
 
             <nav class="flex-wrap items-center justify-center order-last w-full text-base text-center lg:order-none lg:w-auto lg:text-left lg:gap-x-2 lg:flex lg:-ml-16" :class="(!isOpenMenuMobile) ? 'hidden' : ''" x-cloak>
                 <div class="mt-6 lg:mt-0">
-                    <a href="/" class="p-4 transition-colors duration-200 md:rounded-l-full" title="Ir para a página" :class="(atualSecao == '' || atualSecao == 'principal') ? 'bg-blue-500 text-white' : 'hover:text-white hover:bg-blue-500'">Página principal</a>
+                    <a href="/" class="p-4 transition-colors duration-200 md:rounded-l-full" title="Ir para a página" :class="(atualSecao == '' || atualSecao == 'principal') ? 'bg-[#3697ea] text-white' : 'hover:text-white hover:bg-[#3697ea]'">Página principal</a>
                 </div>
                 <div class="mt-6 lg:mt-0">
-                    <a href="#quem-somos" class="p-4 transition-colors duration-200" title="Ir para a seção" :class="(atualSecao == 'quem-somos') ? 'bg-blue-500 text-white' : 'hover:text-white hover:bg-blue-500'">Quem somos</a>
+                    <a href="#quem-somos" class="p-4 transition-colors duration-200" title="Ir para a seção" :class="(atualSecao == 'quem-somos') ? 'bg-[#3697ea] text-white' : 'hover:text-white hover:bg-[#3697ea]'">Quem somos</a>
                 </div>
                 <div class="mt-6 lg:mt-0">
-                    <a href="#professores" class="p-4 transition-colors duration-200" title="Ir para a seção" :class="(atualSecao == 'professores') ? 'bg-blue-500 text-white' : 'hover:text-white hover:bg-blue-500'">Professores</a>
+                    <a href="#professores" class="p-4 transition-colors duration-200" title="Ir para a seção" :class="(atualSecao == 'professores') ? 'bg-[#3697ea] text-white' : 'hover:text-white hover:bg-[#3697ea]'">Professores</a>
                 </div>
                 <div class="mt-6 lg:mt-0">
-                    <a href="#cronograma" class="p-4 transition-colors duration-200" title="Ir para a seção" :class="(atualSecao == 'cronograma') ? 'bg-blue-500 text-white' : 'hover:text-white hover:bg-blue-500'">Cronograma</a>
+                    <a href="#cronograma" class="p-4 transition-colors duration-200" title="Ir para a seção" :class="(atualSecao == 'cronograma') ? 'bg-[#3697ea] text-white' : 'hover:text-white hover:bg-[#3697ea]'">Cronograma</a>
                 </div>
                 <div class="mt-6 lg:mt-0">
                     <button type="button" class="inline-flex items-center p-4 transition-colors duration-200 group md:rounded-r-full" aria-expanded="false" @click="isOpenMenuMais = !isOpenMenuMais" @click.away="isOpenMenuMais = false">
                         Mais
-                        <svg :class="(isOpenMenuMais) ? 'rotate-180 duration-300 text-blue-500' : 'duration-300'" class="w-5 h-5 ml-3 text-blue-500 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <svg :class="(isOpenMenuMais) ? 'rotate-180 duration-300 text-[#3697ea]' : 'duration-300'" class="w-5 h-5 ml-3 text-[#3697ea] group-hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                             <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                         </svg>
                     </button>
@@ -69,7 +69,7 @@
                             <path d="M0 10.3334H28" stroke="currentColor" stroke-width="1.5" />
                             <path d="M0 19.6666H28" stroke="currentColor" stroke-width="1.5" />
                         </svg>
-                        <svg class="w-6 h-6 text-blue-500 hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" x-show="isOpenMenuMobile" x-cloak>
+                        <svg class="w-6 h-6 text-[#3697ea] hover:text-[#3697ea]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" x-show="isOpenMenuMobile" x-cloak>
                             <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
                         </svg>
                     </button>
@@ -99,8 +99,8 @@
         <section class="quem-somos">
             <a id="quem-somos" class="ancora"></a>
             <h2 class="flex">
-                <span class="text-4xl text-blue-500 mr-9 -tracking-wider">Quem Somos</span>
-                <div class="barra flex-grow border-b-blue-500 border-b-[3px] h-8"></div>
+                <span class="text-4xl text-[#3697ea] mr-9 -tracking-wider">Quem Somos</span>
+                <div class="barra flex-grow border-b-[#3697ea] border-b-[3px] h-8"></div>
             </h2>
             <div class="py-12 font-serif text-lg prose text-justify text-gray-700">
                 <p class="indent-7">A Liga Pernambucana de Direito Digital é um grupo que reúne professores, estudantes, profissionais de todas as áreas do conhecimento para a realização de atividades de estudo, pesquisa e extensão na área de tecnologia e o seu relacionamento direto com direitos coletivos e individuais, bem como seu impacto na sociedade. Através da realização de atividades de estudo, pesquisa e extensão como palestras, workshops, hackatons, mutirões, seminários, eventos, etc.</p>
@@ -111,15 +111,15 @@
         <section class="mt-16 equipe">
             <a id="professores" class="ancora"></a>
             <h2 class="flex">
-                <span class="text-4xl text-blue-500 mr-9 -tracking-wider">Professores e Colaboradores</span>
-                <div class="barra flex-grow border-b-blue-500 border-b-[3px] h-8"></div>
+                <span class="text-4xl text-[#3697ea] mr-9 -tracking-wider">Professores e Colaboradores</span>
+                <div class="barra flex-grow border-b-[#3697ea] border-b-[3px] h-8"></div>
             </h2>
             <div class="grid grid-cols-1 mt-12 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
                 <template x-for="(colaborador, index) in colaboradores" :key="index">
                     <div class="flex flex-col items-center justify-center text-center group">
                         <img :src="colaborador.avatar" class="w-40 h-40 mb-8 transition-shadow duration-200 rounded-full group-hover:shadow-lg" />
-                        <p class="text-4xl text-blue-600 mb-7" x-text="colaborador.nome"></p>
-                        <div class="flex mb-6 text-blue-600 gap-x-4 redes">
+                        <p class="text-4xl text-[#3697ea] mb-7" x-text="colaborador.nome"></p>
+                        <div class="flex mb-6 text-[#3697ea] gap-x-4 redes">
                             <a :href="colaborador.redes.instagram" title="Ir para o Instagram (em nova aba)" target="_blank" rel="nofollow" x-show="colaborador.redes.instagram">
                                 <svg class="w-6 h-6 transition-colors duration-200 hover:text-black" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <title>Instagram</title>
@@ -154,10 +154,10 @@
         <section class="mt-16 cronograma">
             <a id="cronograma" class="ancora"></a>
             <h2 class="flex">
-                <span class="text-4xl text-blue-500 mr-9 -tracking-wider">Cronograma de Atividades</span>
-                <div class="barra flex-grow border-b-blue-500 border-b-[3px] h-8"></div>
+                <span class="text-4xl text-[#3697ea] mr-9 -tracking-wider">Cronograma de Atividades</span>
+                <div class="barra flex-grow border-b-[#3697ea] border-b-[3px] h-8"></div>
             </h2>
-            <h3 class="mt-6 text-3xl text-blue-500 mb-14">Primeiro Semestre de 2023</h3>
+            <h3 class="mt-6 text-3xl text-[#3697ea] mb-14">Primeiro Semestre de 2023</h3>
             <div class="grid grid-cols-1 mt-12 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
                 <template x-for="(evento, index) in cronograma" :key="index">
                     <div class="flex flex-col items-center justify-center py-8 text-center bg-white border-2 border-blue-700 shadow-lg group">
@@ -169,7 +169,7 @@
         </section>
     </main>
 
-    <footer class="py-8 text-white bg-blue-500">
+    <footer class="py-8 text-white bg-[#3697ea]">
         <div class="container grid grid-cols-4 px-8 mx-auto 2xl:px-0">
             <div class="flex flex-col col-span-4 lg:col-span-1 gap-y-2">
                 <h3 class="mt-6 text-base font-bold lg:mt-0 lg:mb-6">Sobre</h3>
