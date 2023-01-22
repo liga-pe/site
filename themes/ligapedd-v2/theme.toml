@@ -1,0 +1,12 @@
+name = "LigaPEDD v2"
+license = "Proprietary"
+licenselink = ""
+description = ""
+homepage = "https://github.com/daniloceesar/ligapedd-site"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Danilo César"
+  homepage = "https://github.com/daniloceesar"
