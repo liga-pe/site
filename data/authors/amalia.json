@@ -1,0 +1,13 @@
+{
+    "nome": "Amália Camara",
+    "biografia": "Cofundadora da Liga Pernambucana de Direito Digital, Professora da UPE, Doutora em Direito e Ciência Política. Coordenadora de pós-Graduação na áera de Direito Digital da CERS.",
+    "redes": {
+        "facebook": "https://www.facebook.com/arrudacamara",
+        "instagram": "https://www.instagram.com/amaliacamara/",
+        "linkedin": "https://www.linkedin.com/in/am%C3%A1lia-camara-4a100a140/?originalSubdomain=nl"
+    },
+    "avatar": "/assets/avatars/membro-1.webp",
+
+    "ordem": "1",
+    "professor": true
+}

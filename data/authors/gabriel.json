@@ -1,0 +1,13 @@
+{
+    "nome": "Gabriel Lins",
+    "biografia": "Mestre em Neuroengenharia pelo Instituto Santos Dumont. Pesquisador no Grupo de Estudos de Proteção de Dados e Privacidade.",
+    "redes": {
+        "facebook": "https://www.facebook.com/GabrielHLins/",
+        "instagram": "https://www.instagram.com/gabrielh.lins/?hl=pt-br",
+        "linkedin": "https://www.linkedin.com/in/gabriel-lins-1b0913141/?originalSubdomain=br"
+    },
+    "avatar": "/assets/avatars/membro-7.webp",
+
+    "ordem": "7",
+    "professor": true
+}
