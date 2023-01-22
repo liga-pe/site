@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" class="scroll-smooth">
+{{- partial "head.html" . -}}
+
+<body class="font-sans" x-data="app()" @resize.window="isOpenMenuMobile=false,isOpenMenuMais=false" x-init="atualInicio={{ cond (.IsHome) "true" "false" }}">
+    {{- partial "header.html" . -}}
+
+    {{- block "main" . }}{{- end }}
+
+    {{- partial "footer.html" . -}}
+</body>
+
+</html>

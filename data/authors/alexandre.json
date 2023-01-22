@@ -1,0 +1,11 @@
+{
+    "nome": "Alexandre Pimentel",
+    "biografia": "Professor da UFPE e UNICAP. Desembargador Substituto do TJPE. Coordenador de Proteção de Dados da Ouvidoria Geral e dos cursos internacionais da Escola Judicial do TJPE.",
+    "redes": {
+        "instagram": "https://www.instagram.com/alexandre.freirepimentel/"
+    },
+    "avatar": "/assets/avatars/membro-3.webp",
+
+    "ordem": "3",
+    "professor": true
+}

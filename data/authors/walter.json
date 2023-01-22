@@ -1,0 +1,13 @@
+{
+    "nome": "Walter Rodrigues",
+    "biografia": "Cofundador da Liga de Direito Digital, Professor de Direito Digitale Mestrando no Centro de Informática da UFPE. Encarregado de Dados.",
+    "redes": {
+        "facebook": "https://www.facebook.com/pag42/",
+        "instagram": "https://www.instagram.com/walter.adv/",
+        "linkedin": "https://www.linkedin.com/in/walter-de-macedo-rodrigues-bb39241b4/"
+    },
+    "avatar": "/assets/avatars/membro-5.webp",
+
+    "ordem": "5",
+    "professor": true
+}
