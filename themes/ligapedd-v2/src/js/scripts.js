@@ -3,6 +3,7 @@ const app = () => {
         isInscricoesAbertas: true,
 
         atualSecao: "",
+        atualInicio: false,
         isOpenMenuMobile: false,
         isOpenMenuMais: false,
 
