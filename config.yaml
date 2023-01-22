@@ -3,6 +3,10 @@ languageCode: 'pt-br'
 title: 'Liga Pernambucana de Direito Digital'
 theme: 'ligapedd-v2'
 
+Params: {
+    description: 'Portal da Liga Pernambucana de Direito Digital'
+}
+
 Taxonomies: {
     category: "categorias",
     author: "colaboradores",
