@@ -10,12 +10,12 @@ const app = () => {
         grupos: [
             {
                 "titulo": "Democracia Líquida",
-                "link": "breve.html",
+                "link": "breve/",
                 "slug": "democracia-liquida"
             },
             {
                 "titulo": "Smart Cities",
-                "link": "breve.html",
+                "link": "breve/",
                 "slug": "smart-cities"
             },
             {
@@ -35,7 +35,7 @@ const app = () => {
             },
             {
                 "titulo": "Proteção de Dados e Privacidade",
-                "link": "breve.html",
+                "link": "breve/",
                 "slug": "protecao-de-dados-e-privacidade"
             }
         ],

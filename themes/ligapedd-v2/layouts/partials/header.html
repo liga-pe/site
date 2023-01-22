@@ -6,7 +6,7 @@
 
         <nav class="flex-wrap items-center justify-center order-last w-full text-base text-center lg:order-none lg:w-auto lg:text-left lg:gap-x-2 lg:flex lg:-ml-16" :class="(!isOpenMenuMobile) ? 'hidden' : ''" x-cloak>
             <div class="mt-6 lg:mt-0">
-                <a href="/" class="p-4 transition-colors duration-200 md:rounded-l-full" title="Ir para a página" :class="(atualSecao == '' || atualSecao == 'principal') ? 'bg-[#3697ea] text-white' : 'hover:text-white hover:bg-[#3697ea]'">Página principal</a>
+                <a href="/" class="p-4 transition-colors duration-200 md:rounded-l-full" title="Ir para a página" :class="(atualSecao == '' && atualInicio || atualSecao == 'principal') ? 'bg-[#3697ea] text-white' : 'hover:text-white hover:bg-[#3697ea]'">Página principal</a>
             </div>
             <div class="mt-6 lg:mt-0">
                 <a href="#quem-somos" class="p-4 transition-colors duration-200" title="Ir para a seção" :class="(atualSecao == 'quem-somos') ? 'bg-[#3697ea] text-white' : 'hover:text-white hover:bg-[#3697ea]'">Quem somos</a>
@@ -27,8 +27,8 @@
 
                 <div class="absolute z-40 transform" x-show="isOpenMenuMais" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" x-cloak>
                     <div class="flex flex-col overflow-hidden bg-white rounded-lg shadow">
-                        <a href="breve.html" class="w-full p-4 transition-colors duration-200 hover:text-white hover:bg-[#3697ea]" title="Ir para a página">Política de privacidade</a>
-                        <a href="breve.html" class="w-full p-4 transition-colors duration-200 hover:text-white hover:bg-[#3697ea]" title="Ir para a página">Lista de grupos</a>
+                        <a href="breve/" class="w-full p-4 transition-colors duration-200 hover:text-white hover:bg-[#3697ea]" title="Ir para a página">Política de privacidade</a>
+                        <a href="breve/" class="w-full p-4 transition-colors duration-200 hover:text-white hover:bg-[#3697ea]" title="Ir para a página">Lista de grupos</a>
                     </div>
                 </div>
             </div>
