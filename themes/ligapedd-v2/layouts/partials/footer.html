@@ -8,9 +8,9 @@
         </div>
         <div class="flex flex-col col-span-4 lg:col-span-1 gap-y-2">
             <h3 class="mt-6 text-base font-bold lg:mt-0 lg:mb-6">Grupos Membros</h3>
-            <template x-for="(grupo, index) in grupos" :key="index">
-                <a :href="grupo.link" class="text-sm hover:underline" rel="nofollow" title="Ir para a página" x-text="grupo.titulo"></a>
-            </template>
+            {{ range $grupo := .Site.Data.grupos }}
+                <a href="{{ $grupo.link }}" class="text-sm hover:underline" rel="nofollow" title="Ir para a página">{{ $grupo.titulo }}</a>
+            {{ end }}
         </div>
         <div class="flex flex-col col-span-4 lg:col-span-1 gap-y-2">
             <h3 class="mt-6 text-base font-bold lg:mt-0 lg:mb-6">Dúvidas</h3>

@@ -7,39 +7,6 @@ const app = () => {
         isOpenMenuMobile: false,
         isOpenMenuMais: false,
 
-        grupos: [
-            {
-                "titulo": "Democracia Líquida",
-                "link": "breve/",
-                "slug": "democracia-liquida"
-            },
-            {
-                "titulo": "Smart Cities",
-                "link": "breve/",
-                "slug": "smart-cities"
-            },
-            {
-                "titulo": "Transparência algorítmica",
-                "link": "https://www.instagram.com/transparencia.dd/",
-                "slug": "transparencia-algoritmica"
-            },
-            {
-                "titulo": "Propriedade Intelectual",
-                "link": "https://www.instagram.com/propriedadeintelectual.dd/",
-                "slug": "propriedade-intelectual"
-            },
-            {
-                "titulo": "Tributec",
-                "link": "https://www.instagram.com/tributec.dd/",
-                "slug": "tributec"
-            },
-            {
-                "titulo": "Proteção de Dados e Privacidade",
-                "link": "breve/",
-                "slug": "protecao-de-dados-e-privacidade"
-            }
-        ],
-
         cronograma: [
             {
                 "titulo": "Início das Inscrições",

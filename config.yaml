@@ -5,7 +5,8 @@ theme: 'ligapedd-v2'
 
 Taxonomies: {
     category: "categorias",
-    author: "colaboradores"
+    author: "colaboradores",
+    grupo: "grupos"
 }
 
 Permalinks: {
