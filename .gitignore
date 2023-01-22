@@ -1,5 +1,12 @@
-# VSCode preferences
+# VSCode
 .vscode/
+.frontmatter/
+frontmatter.json
+
+# HUGO
+.hugo_build.lock
+build
+themes/*/static/
 
 # Logs
 logs

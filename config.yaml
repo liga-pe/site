@@ -1,0 +1,12 @@
+baseURL: 'https://ligapedd.vercel.app/'
+languageCode: 'pt-br'
+title: 'Liga Pernambucana de Direito Digital'
+
+# Taxonomies: {
+#     category: "categorias",
+#     authors: "colaboradores"
+# }
+
+Permalinks: {
+    pages: "/:filename/"
+}
