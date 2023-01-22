@@ -15,7 +15,7 @@
     "hugo:clean": "rm -rf build resources public",
     "hugo:serve": "hugo server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i themes/ligapedd-v2/src/css/styles.css -o themes/ligapedd-v2/static/css/styles.css --minify && mkdir themes/ligapedd-v2/static/js && uglifyjs --compress --mangle -- themes/ligapedd-v2/src/js/*.js > themes/ligapedd-v2/static/scripts.js && npm run hugo:build"
+    "build": "tailwindcss -i themes/ligapedd-v2/src/css/styles.css -o themes/ligapedd-v2/static/css/styles.css --minify && uglifyjs --compress --mangle -- themes/ligapedd-v2/src/js/*.js > themes/ligapedd-v2/static/scripts.js && npm run hugo:build"
   },
   "repository": {
     "type": "git",
